@@ -1,0 +1,48 @@
+% !TEX program = xelatex
+% 完整编译方法 2: xelatex -> bibtex -> xelatex -> xelatex
+% Auriga theme
+% https://github.com/anishathalye/auriga
+
+\documentclass[14pt,aspectratio=169]{beamer}
+\usepackage{pgfpages}
+\usepackage{fancyvrb}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\input{../xeCJK-settings.tex} % 中文字体设定
+
+\usetheme{auriga}
+\usecolortheme{auriga}
+
+% define some colors for a consistent theme across slides
+\definecolor{red}{RGB}{181, 23, 0}
+\definecolor{blue}{RGB}{0, 118, 186}
+\definecolor{gray}{RGB}{146, 146, 146}
+
+\title{标题}
+
+\author{\underline{\bf\kai{张三}} \inst{1} \and {\bf\kai{李四}} \inst{2} \and {\bf\kai{王五}} \inst{3}}
+
+\institute[shortinst]{\inst{1} 北京师范大学 \samelineand \inst{2}
+四川联合大学 \samelineand \inst{3} 山东德州大学}
+
+\begin{document}
+
+{
+  % rather than use the frame options [noframenumbering,plain], we make the
+  % color match, so that the indicated page numbers match PDF page numbers
+  \setbeamercolor{page number in head/foot}{fg=background canvas.bg}
+  \begin{frame}
+    \titlepage
+  \end{frame}
+}
+
+\input{../fonts-cn-test.tex} % 中文字体测试
+\input{slides/bullets}
+\input{slides/split}
+\input{slides/figure}
+\input{slides/centered}
+\input{slides/monospace}
+\input{slides/brackets}
+\input{slides/link}
+
+\end{document}
