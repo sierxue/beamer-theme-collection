@@ -1,0 +1,21 @@
+\begin{frame}
+  \frametitle{定理环境中文或英文显示测试}
+  \begin{itemize}
+      \item {\bf 注意}：如用 *-cn-ctex.tex,
+         你看到的是~{\bf 定理} 和~{\bf 证明};
+      \item {\bf 注意}：如用 *-cn-xeCJK.tex, 你看到的是 Theorem 和 Proof.
+  \end{itemize}
+
+  \begin{theorem}
+    不存在最大的质数。
+  \end{theorem}
+  \begin{proof}
+    \begin{enumerate}
+    \item Suppose $p$ were the largest prime number.
+    \item Let $q$ be the product of the first $p$ numbers,
+    then $q + 1$ is not divisible by any of them.
+    But $q + 1$ is greater than $1$, thus divisible by some prime
+      number not in the first $p$ numbers.\qedhere
+    \end{enumerate}
+  \end{proof}
+\end{frame}
