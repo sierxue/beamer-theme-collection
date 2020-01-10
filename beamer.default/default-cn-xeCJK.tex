@@ -1,0 +1,20 @@
+% !TEX program = xelatex
+% 完整编译方法 2: xelatex -> bibtex -> xelatex -> xelatex
+
+\documentclass{beamer}
+\usepackage{xeCJK}
+
+\input{../_input-tex/settings-chinese-fonts.tex} % 中文字体设定
+
+\input{../_input-tex/frame-title.tex} % 标题页
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\input{../_input-tex/frame-chinese-fonts.tex} % 中文字体测试
+\input{../_input-tex/frame-theorem.tex} % 定理环境中文或英文显示测试
+
+\end{document}
