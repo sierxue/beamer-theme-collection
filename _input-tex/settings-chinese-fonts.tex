@@ -1,8 +1,28 @@
-\setCJKmainfont{FandolSong-Regular}
+\setCJKmainfont[
+    AutoFakeBold=true
+]{FandolFang-Regular} % Beamer 默认使用 sf 字体族。
+
 \setCJKsansfont[
     BoldFont=FandolSong-Bold,
     ItalicFont=FandolKai-Regular
 ]{FandolSong-Regular}
-\setCJKmonofont{FandolFang-Regular}
-\newCJKfontfamily\kai[AutoFakeBold=true]{FandolKai-Regular}
-\newCJKfontfamily\hei{SimHei}
+
+\setCJKmonofont[
+    BoldFont=FandolHei-Bold
+]{FandolHei-Regular}
+
+\newCJKfontfamily\song[
+    BoldFont=FandolSong-Bold
+]{FandolSong-Regular}
+
+\newCJKfontfamily\hei[
+    BoldFont=FandolHei-Bold
+]{FandolHei-Regular}
+
+\newCJKfontfamily\kai[
+    AutoFakeBold=true
+]{FandolKai-Regular}
+
+\newCJKfontfamily\fang[
+    AutoFakeBold=true
+]{FandolFang-Regular}
