@@ -4,7 +4,9 @@
 % https://github.com/anishathalye/auriga
 
 \documentclass[14pt,aspectratio=169]{ctexbeamer}
-\input{../_input-tex/ctexbeamer-settings.tex} % 中文字体设定
+
+\input{../_input-tex/settings-chinese-fonts.tex} % 中文字体设定
+
 \usepackage{pgfpages}
 \usepackage{fancyvrb}
 \usepackage{tikz}
@@ -18,12 +20,7 @@
 \definecolor{blue}{RGB}{0, 118, 186}
 \definecolor{gray}{RGB}{146, 146, 146}
 
-\title{标题}
-
-\author{\underline{\bf\kai{张三}} \inst{1} \and {\bf\kai{李四}} \inst{2} \and {\bf\kai{王五}} \inst{3}}
-
-\institute[shortinst]{\inst{1} 北京师范大学 \samelineand \inst{2}
-四川联合大学 \samelineand \inst{3} 山东德州大学}
+\input{../_input-tex/frame-title.tex} % 标题页
 
 \begin{document}
 
@@ -36,8 +33,8 @@
   \end{frame}
 }
 
-\input{../_input-tex/fonts-cn-test.tex} % 中文字体测试
-\input{../_input-tex/slides-theorem.tex} % 定理环境中文或英文显示测试
+\input{../_input-tex/frame-chinese-fonts.tex} % 中文字体测试
+\input{../_input-tex/frame-theorem.tex} % 定理环境中文或英文显示测试
 \input{slides/bullets}
 \input{slides/split}
 \input{slides/figure}
